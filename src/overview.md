@@ -1,6 +1,6 @@
-## 1-Click Child-Links ##
+## 1-Click Child-Links-Upgrade
 
-<a href="https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links" target="_blank">1-Click Child-Links</a> is an Azure DevOps extension for creating multiple work items as children via single click, where each work item is based on a single pre-defined template.
+<a href="https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links" target="_blank">1-Click Child-Links-Upgrade</a> is an Azure DevOps extension for creating multiple work items as children via single click, where each work item is based on a single pre-defined template.
 
 Azure DevOps offers team-specific work item templating as <a href="https://docs.microsoft.com/en-us/azure/devops/boards/backlogs/work-item-template?view=azure-devops&tabs=browser" target="_blank">core functionality</a> with which you can quickly apply pre-populated values for your team's commonly used fields per work item type.
 
@@ -14,76 +14,82 @@ Simplified: put the list of applicable parent work item types in the child templ
 
 Complex: put a minified (single line) JSON string into the child template's description field, like this:
 
-``` json
+```json
 {
-    "applywhen": 
-    {
-        "System.State": "Approved",
-        "System.Tags" : ["Blah", "ClickMe"],
-        "System.WorkItemType": "Product Backlog Item"
-    }
+  "applywhen": {
+    "System.State": "Approved",
+    "System.Tags": ["Blah", "ClickMe"],
+    "System.WorkItemType": "Product Backlog Item"
+  }
 }
 ```
 
-### Define team templates ###
+### Define team templates
 
 <a href="https://docs.microsoft.com/en-us/azure/devops/boards/backlogs/work-item-template?view=azure-devops&tabs=browser#manage" target="_blank">Manage work item templates</a>
 
 ![Export](img/screen01.png)
 
-### Create / open a work item ###
+### Create / open a work item
 
-Find 1-Click Child-Links on toolbar menu
+Find 1-Click Child-Links-Upgrade on toolbar menu
 
 ![Export](img/screen02.png)
 
-### Done ###
+### Done
 
 You should now have children associated with the open work item.
 
 ![Export](img/screen03.png)
 
-## Release notes ##
+## Release notes
 
-* v0.11.3
-  * Fixed issue #62
-  * Fixed issue #49
+- v0.11.3
 
-* v0.11.0
-  * Fixed issue #50
-  * Fixed issue #48
-  * Fixed issue #46
-  * Fixed issue #45
-  * Fixed issue #41
-  * Fixed issue #37
-  * Enhancement issue #49
+  - Fixed issue #62
+  - Fixed issue #49
 
-* v0.10.0
-  * Template applicability criteria can be defined using complex JSON objects in the template description.
+- v0.11.0
 
-* v0.8.0
-  * Template sets can now be created on keywords in titles on top of Work Item Types
-  * Inherit values from parent work item fields (<a href="https://github.com/figueiredorui/1-click-child-links/wiki/Inherit-field-values-from-parent-work-item" target="_blank">wiki</a>)
-  * Copy field value from parent (<a href="https://github.com/figueiredorui/1-click-child-links/wiki/Copy-field-value-from-parent" target="_blank">wiki</a>)
+  - Fixed issue #50
+  - Fixed issue #48
+  - Fixed issue #46
+  - Fixed issue #45
+  - Fixed issue #41
+  - Fixed issue #37
+  - Enhancement issue #49
 
-* v0.6.0
-  * 1-Click Child-Links option available when selecting multiple work items
+- v0.10.0
 
-* v0.5.0
-  * 1-Click Child-Links option available on Card and Backlog context menu.
+  - Template applicability criteria can be defined using complex JSON objects in the template description.
 
-* v0.4.0
-  * Identifier to distinguish templates sets to be added in a single click (<a href="https://github.com/figueiredorui/1-click-child-links/wiki/Group-templates-with-identifier" target="_blank">wiki</a>)
+- v0.8.0
 
-* v0.3.0
-  * Enforce correct order when adding child links to work item
+  - Template sets can now be created on keywords in titles on top of Work Item Types
+  - Inherit values from parent work item fields (<a href="https://github.com/figueiredorui/1-click-child-links/wiki/Inherit-field-values-from-parent-work-item" target="_blank">wiki</a>)
+  - Copy field value from parent (<a href="https://github.com/figueiredorui/1-click-child-links/wiki/Copy-field-value-from-parent" target="_blank">wiki</a>)
 
-## Contributors ##
+- v0.6.0
+
+  - 1-Click Child-Links-Upgrade option available when selecting multiple work items
+
+- v0.5.0
+
+  - 1-Click Child-Links-Upgrade option available on Card and Backlog context menu.
+
+- v0.4.0
+
+  - Identifier to distinguish templates sets to be added in a single click (<a href="https://github.com/figueiredorui/1-click-child-links/wiki/Group-templates-with-identifier" target="_blank">wiki</a>)
+
+- v0.3.0
+  - Enforce correct order when adding child links to work item
+
+## Contributors
 
 <a href="https://github.com/jdshkolnik"><img src="https://avatars.githubusercontent.com/u/2047520?v=3" title="jdshkolnik" width="80" height="80"></a>
 <a href="https://github.com/thesobercoder"><img src="https://avatars.githubusercontent.com/u/1915249?v=3" title="thesobercoder" width="80" height="80"></a>
 
-## Learn more ##
+## Learn more
 
 This extension is an enhanced version of <a href="https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks" target="_blank">1-Click Tasks</a>
 
